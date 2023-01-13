@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --skin: #F3C1A6;
+    --skin-shadow: #E39584;
+    --skin-shadow-2: #E39584;
+    --white: #fff;
+    --dark: #031F31;
+    --tongue: #CF476D;
+    --dark-skin: #600F23; 
+
+}
+
+body{
+    background-color:darkslategrey;
+    display: grid;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.head{
+    width: 200px;
+    height: 300px;
+    background-color: var(--skin);
+    border-radius: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.head-neck{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    background-color: var(--skin-shadow);
+    bottom: -50px;
+    border-radius: 0 0 15px 15px;
+}
+
+.head-beard{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    background-color: var(--dark);
+    bottom: -30px;
+    border-radius: 50px 50px 80px 80px;
+}
+
+.head-nose{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: var(--skin-shadow-2);
+    top: -10px;
+}
+
+.head-mouth{
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    background-color: var(--dark-skin);
+    border-radius: 20px 40px 100% 100%;
+    top: 60px;
+    overflow: hidden;
+}
+
+.head-mouth-teeth{
+    width: 80px;
+    height: 20px;
+    background-color: var(--white);
+    border-radius: 0 0 10px 0;
+}
+
+.head-mouth-tongue{
+    width: 60px;
+    height: 30px;
+    background-color: var(--tongue);
+    border-radius: 0 20px 0 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.head-eyes{
+    position: absolute;
+    display: flex;
+    top: 90px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.head-eye{
+    margin-top: -10px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--white);
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.head-eye-pupil{
+    width: 5px;
+    height: 7px;
+    border-radius: 2.5px;
+    background-color: var(--dark);
+}
+
+.head-glasses{
+    position: absolute;
+    display: flex;
+    top: 80px;
+}
+.head-glas{
+    
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--dark);
+    border-radius: 5px;
+    opacity: 0.5;
+}
+
+.head-ears{
+    top: 130px;
+    position: absolute;
+    width: 230px;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-ear{
+    width: 15px;
+    height: 30px;
+    background-color: var(--skin-shadow);
+}
+
+.head-ear__left{
+    border-radius: 15px 0 0 15px;
+}
+
+.head-ear__rigth{
+    border-radius: 0 15px 15px 0;
+}
