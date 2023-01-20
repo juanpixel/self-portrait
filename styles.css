@@ -51,8 +51,26 @@ body{
     width: 100%;
     height: 60%;
     background-color: var(--dark);
-    bottom: -30px;
+    top: 150px;
     border-radius: 50px 50px 80px 80px;
+
+    animation: beard 500ms linear infinite;
+}
+
+@keyframes beard{
+    0%{
+        height: 60%;
+    }
+
+    50%{
+        height: 55%;
+    }
+
+    100%{
+        height: 60%;
+    }
+
+    
 }
 
 .head-nose{
@@ -72,6 +90,24 @@ body{
     border-radius: 20px 40px 100% 100%;
     top: 60px;
     overflow: hidden;
+
+    animation: boca 500ms linear infinite;
+}
+
+@keyframes boca{
+    0%{
+        height: 60px;
+    }
+
+    50%{
+        height: 0px;
+        transform: translate(0,30px);
+    }
+
+    100%{
+        height: 60px;
+        transform: translate(0,0);
+    }
 }
 
 .head-mouth-teeth{
@@ -79,6 +115,8 @@ body{
     height: 20px;
     background-color: var(--white);
     border-radius: 0 0 10px 0;
+    position: absolute;
+    z-index: 2;
 }
 
 .head-mouth-tongue{
@@ -96,6 +134,27 @@ body{
     top: 90px;
     height: 40px;
     overflow: hidden;
+    
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink{
+    0%{
+        height: 40px;
+    }
+
+    10%{
+        height: 2px;
+        transform: translate(0,20px);
+    }
+
+    20%{
+        transform: translate(0,0);
+        height: 40px;
+    }
 }
 
 .head-eye{
